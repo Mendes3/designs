@@ -1,0 +1,163 @@
+
+	body{
+     margin:0px;
+     background-color:#4bcffa;
+    
+	}
+	nav{
+		
+		display:flex;
+		justify-content:space-between;
+		width:100%;
+		height:10%;
+		padding:0 5px;
+		box-sizing:border-box;
+		
+	}
+	.nav-items{
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		width:30%;
+
+	}
+	section.welcome{
+		position:relative;
+		display:flex;
+		
+		width:100vw;
+		height:90vh;
+	
+		
+	
+	}
+	.text-area,.img-area{
+		width:50%;
+		height:90%;
+
+	}
+	.text-area{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		padding:0 5vw;
+
+	}
+	.logo{
+
+		padding:0 5vw;
+		height:10vh;
+		width:8%;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	#logo-image{
+		height:30px;
+		width:30px;
+	}
+	.img-area{
+		width:70%;
+		display:inline-block;
+		text-align:center;
+	}
+	.img-area img{
+		height:75%;
+
+	}
+	.sub-title{
+		font-size:30px;
+		text-transform:uppercase;
+	}
+	.title{
+		font-size:80px;
+		padding-top:10px;
+	}
+	.description{
+		padding-top:10px;
+	}
+	button{
+		padding:5px;
+		background-color:#dfe4ea;
+		width:25%;
+		margin-top:10px;
+		border:none;
+		border-radius:20px;
+		font-size:16px;
+	}
+	.hire-me{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		width:30vw;
+
+	}
+	#circle{
+		position:fixed;
+		top:10%;
+		right:12%;
+		width:25%;
+		height:50%;
+		border-radius:50%;
+		background-color:white;
+		z-index: -1;
+		opacity:0.7;
+	}
+	section.contact{
+		display:flex;
+		flex-direction: column;
+		width:100vw;
+		height:90vh;
+		
+	}
+	.con-image{
+		height:80%;
+		width:100%;
+		display:inline-block;
+		text-align:center;
+	}
+	.con-image img{
+		height:100%;
+		width:80%;
+		
+
+	}
+	.con-text{
+		display:flex;
+		width:40%;
+		height:10%;
+		align-items: center;
+		justify-content: space-between;
+		padding:0 10px;
+	}
+	
+	.nav-item:hover{
+		color:blue;
+	}
+
+    a{
+	text-decoration: none;
+     }
+     .pro-title{
+     	font-size:100px;
+     	margin:0 0 3% 5%;
+     }
+     .pro-designs{
+     	display:flex;
+     	flex-wrap:wrap;
+     	background-color:gray;
+     	margin:0 5%;
+     	padding:0 2%;
+
+     }
+     .pro-designs div{
+     	background-color:yellow;
+     	width:27%;
+     	height:50%;
+     	line-height:60vh;
+     	margin:30px;
+     	text-align:center;
+     }
+
+
+}

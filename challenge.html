@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet"> 
+	<style>
+		:root{
+			--body-font:'Zilla Slab', serif;;
+		}
+		body{
+			margin:0;
+			font-family:var(--body-font);
+		}
+		section.welcome{
+			position:relative;
+			display:flex;
+			height:100vh;
+			width:100%;
+		}
+		nav{
+			position: fixed;
+            width: 75%;
+            height:7vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 5vw;
+            box-sizing: border-box;
+        }
+        .nav-items{
+			width: 70%;
+            display: flex;
+            justify-content: space-between;
+		}
+		.left-area{
+			padding-top:5%;
+			box-sizing:border-box;
+			height:95%;
+			width:40%;
+			display:flex;
+			flex-direction:column;
+
+		}
+		.left-image-area{
+			height:60%;
+		}
+		.right-area{
+			padding-top:5%;
+			box-sizing:border-box;
+			height:95%;
+			width:60%;
+			display:flex;
+			flex-direction:column;			
+		}
+		.left-image-area img{
+			height:80%;
+			width:100%;
+		}
+		.left-text-area{
+			display:flex;
+			justify-content:space-between;
+			padding-left:5%;
+			box-sizing:border-box;
+			width:100%;
+			height:100%;	
+
+		}
+		.vertical-line{
+			border-left:2px solid black;
+			height:18vh;
+			margin:1vw;
+
+		}
+		.pages{
+			display:flex;
+			width:4vw;
+			justify-content:space-between;
+		}
+		.icons{
+			padding-top:10%;
+			height:80%;
+			width:10%;
+			box-sizing:border-box;
+		}
+		.icons i{
+			padding-top:90%;
+		}
+
+		.topic{
+			font-size:50px;
+			margin-left:8%;
+		}
+		.sub-topic{
+			font-size:50px;
+			font-weight:bold;
+			padding-bottom:10%;
+			box-sizing:border-box;
+			text-align:center;
+		}
+		.right-image-area{
+			display:flex;
+			height:67.5%;
+			width:100%;
+		}
+		.right-image-area img{
+			width:100%;
+			height:100%;
+
+		}
+		.pink-box{
+			position:absolute;
+			width:24vw;
+			height:20vh;
+			top:40%;
+			left:30%;
+			background-color:#e84393;
+			opacity:0.5;
+
+		}
+		.absolute-text{
+			position:absolute;
+			top:40%;
+			left:72%;
+			transform:rotate(270deg);
+			text-transform:uppercase;
+			font-size:130px;
+			color:#e84393;
+
+		}
+		.absolute-number{
+			position:absolute;
+			bottom:30%;
+			left:20%;
+			font-size:60px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo"><i class="fa fa-joomla"></i></div>
+		<div class="nav-items">
+			<div>Home</div>
+			<div>Personal</div>
+			<div>Small Business</div>
+			<div>About Us</div>
+			<div>Contact</div>
+		</div>
+	</nav>
+	<section class="welcome">
+		<div class="left-area">
+		<div class="left-image-area">
+			<img src="./office.jpg">
+		</div>
+		<div class="left-text-area">
+			<div>
+			<div class="pages">
+				<div>01</div>
+				<div><i class="fa fa-chevron-up"></i></div>
+			</div>
+			<div class="vertical-line"></div>
+			<div class="pages">
+				<div>04</div>
+				<div><i class="fa fa-chevron-down"></i></div>
+			</div>
+		</div>
+		<div class="icons">
+			<div><i class="fa fa-facebook"></i></div>
+			<div><i class="fa fa-instagram"></i></div>
+			<div><i class="fa fa-google-plus"></i></div>
+		</div>
+	</div>
+</div>
+<div class="right-area">
+	<div class="right-text-area">
+		<div class="topic">Small enough to listen,</div>
+		<div class="sub-topic"> Big enough to</div>
+	</div>
+	<div class="right-image-area">
+		<img src=./building.jpeg>
+	</div>
+</div>
+	</section>
+<div class="pink-box"></div>
+<div class="absolute-text">deliver</div>
+<div class="absolute-number">02</div>
+</body>
+</html>

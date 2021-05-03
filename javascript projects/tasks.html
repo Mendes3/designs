@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding new tasks</title>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded',()=>{
+
+			document.querySelector('#submit').disabled=true;//intially disabling button
+
+			 document.querySelector('#task').onkeydown = ()=>{
+			 	if(document.querySelector('#task').value.length>0)//comparing length of input according to which button is enabled or disabled
+			 	document.querySelector('#submit').disabled=false;
+			 else
+			 document.querySelector('#submit').disabled=true;
+			 };
+
+
+		document.querySelector('#new-task').onsubmit = () =>{ //main work starts when submit button is pressed
+			//create new item for list
+			const li=document.createElement('li');
+			//put value entered in list item
+			li.innerHTML=document.querySelector('#task').value;
+			//add new item to task list
+			document.querySelector('#tasks').append(li);
+			//clear input field
+
+			document.querySelector('#task').value= '';
+			document.querySelector('#submit').disabled=true;//disable button again
+			
+
+
+			//preventing from form submission
+			return false;
+
+
+		};
+		});
+	</script>
+</head>
+<body>
+	<h1>Tasks</h1>
+	<ul id="tasks">
+	</ul>
+	<form id="new-task">
+	<input type="text" placeholder="New Task" autofocus autocomplete="off" id="task">
+	<input id="submit" type="submit">
+</form>
+
+
+</body>
+</html>

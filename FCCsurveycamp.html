@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC:Survey Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<style>
+		body{
+			background-image:url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?cs=srgb&dl=dawn-desktop-background-dusk-36717.jpg&fm=jpg');
+			background-repeat:no-repeat;
+			background-size:cover;
+		background-position:center;
+			height:100%;
+		}
+		h1{
+	color:white;
+	margin-bottom:0px;
+		}
+		#formdiv{
+			padding:30px 30px;
+			line-height:2;
+			margin: 30px auto;
+			width:600px;
+			height:100%;
+			background-color:#401e45;
+			opacity: 0.8;
+			border: 1px solid;
+			box-shadow: 1px;
+  filter: alpha(opacity=70); 
+  color:white;
+  font-family:"arial";
+  font-weight:550;
+
+
+		}
+		#title{
+font-family:"Poppins", sans-serif;
+text-align:center;
+}
+
+	#survey-form{
+		font-size:17px;
+		margin-top:0px;
+	margin-left:20px;
+	padding-top:20px;
+
+	}
+	#submit{
+		font-size: 17px;
+		letter-spacing: 2px;
+		background-color:#e92a31;
+		padding: 10px 10px;
+		color: #fff;
+		text-transform: uppercase;
+		border-radius: 10px;
+		outline: none;
+		border: 2px solid #fff;
+		width:90%;	}
+		select{
+			width:98%;
+			font-size:20px;
+			height:30px;
+			border-radius: 10px;
+			border: none;
+		}
+		.same{
+			width:550px;
+			border-radius:10px;	
+			font-size:18px;
+			outline: none;
+			border: none;
+			padding: 5px 10px;
+
+		}
+
+	</style>
+
+</head>
+<body>
+<main>
+	<div id="backimg">
+	<div id="title">
+		<h1>FreeCodeCamp Survey Form</h1><br>
+		<center style="color:white; font-size:20px; margin-top:0px "><em>Thank you for taking the time to help us improve the platform </em></center>
+</div>
+<div  id="formdiv">
+	<form id="survey-form">
+		
+	Name:
+	<input class="same" type="text" value="name" placeholder="Enter your name"  name="name" required >
+	Email:
+	<input class="same" type="email" value="email" placeholder="example@gmail.com " required ><br>
+	Age(optional):	<input type="number" name="quantity" class="same" min="10" max="80"><br>
+	Which options better describes your role?<br>
+	<select class="" name="cars" placeholder="Select an option" required>
+		<option value="Student">Student</option>
+		<option value="full-time-job">full time job</option>
+<option value="full-time-learner">full time learner</option>
+<option value="prefer-not-to-say">prefer not to say</option>
+<option value="other">other</option>
+</select><br>
+Would you recommend freecodecamp to your friend?
+<input type="radio" name="recommend" >
+<label value="definitely" name="recommend">definitely</label><br>
+<input  type="radio" name="recommend" >
+<label value="maybe" name="recommend">maybe</label>
+<input type="radio"  name="recommend" >
+<label value="not-sure" name="recommend">not sure</label><br>
+What is your favourite feature of freecodecamp?<br>
+<select class="" name="favourite" placeholder="Select an option" required>
+	<option disabled> Select an option</option>
+	<option value="challenges">challenges</option>
+	<option value="open-source">open source</option>
+	<option value="projects">projects</option>
+	<option value="community">community</option>
+</select><br>
+What would you like to see improved?<br>
+<input type="checkbox" name="improved">
+<label value="fornt-end-projects" name="improved">front-end projects</label><br>
+<input type="checkbox" name="improved">
+<label value="back-end-projects" name="improved">Back-end Projects</label><br>
+<input type="checkbox" name="improved">
+<label value="Data Visualization" name="improved">Data Visualization</label><br>
+<input type="checkbox" name="improved">
+<label value="Challenges" name="improved">Challenges</label><br>
+<input type="checkbox" name="improved">
+<label value="Open Source Community" name="improved">Open Source Community</label><br>
+<input type="checkbox" name="improved">
+<label value="Glitter help rooms">Glitter help rooms</label><br>
+<input type="checkbox" name="improved">
+<label value="Videos">Videos</label><br>
+<input type="checkbox" name="improved">
+<label value="City Meetups" name="improved">CIty Meetups</label><br>
+<input type="checkbox" name="improved">
+<label value="Wiki" name="improved">Wiki</label><br>
+<input type="checkbox" name="improved">
+<label value="Forum" name="improved">Forum</label><br>
+<input type="checkbox" name="improved">
+<label value="Additional" name="improved">Additional</label><br>
+Any comments or suggestions?<br>
+<textarea style="width:90% ; height:80px;border-radius:10px;"rows="4" cols="50"></textarea><br>
+<input type="submit" id="submit" value="submit">
+</form>
+	</div>
+</div>
+</main>
+</body>
+</html>

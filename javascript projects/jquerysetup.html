@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	//Both google and microsoft host jQuery. Without downloading the jquery library ,you can use include it from google or microsoft Content Delivery Network.
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>//google CDN
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>//micrsoft CDN
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("a[target='_blank']").hide();
+			});
+
+		});
+		$(document).ready(function(){
+			$(".p1").mouseenter(function(){
+				alert("You entered a paragraph");
+			});
+		});
+		$(document).ready(function(){
+			$(".p1").hover(function(){
+				alert("you entered p1");
+
+			},
+			function(){
+				alert("Bye! you are leaving p1");
+
+			});
+		});
+		$(document).ready(function(){
+			$("input").focus(function(){
+				$(this).css("background-color","#cccccc");
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<p>This is a paragraph</p>
+
+	<p><a class="p1" href="https://www.w3schools.com/html/" target="_blank">HTML tutorial</a></p>
+	<p><a  href="https://www.w3schools.com/css/"> CSS tutorial</a></p>
+	Name:<input type="text">
+	<button>click me</button>
+
+
+</body>
+</html>

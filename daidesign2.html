@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Raleway&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		:root{
+			--title-font:'Caveat', cursive;
+			--body-font:'Raleway', sans-serif;
+		}
+		body{
+			margin:0;
+			background:linear-gradient(165deg,#f7f6f2,#faf9f7);
+			font-family: var(--body-font)
+		}
+		nav{
+			position: fixed;
+			display: flex;
+			align-items:center;
+			width:100vw;
+			justify-content:space-between;
+			box-sizing:border-box;
+			height:8vh;
+			padding:0 5vw;
+			background-color:white;
+
+		}
+		.search{
+			opacity:0.2;
+			display:flex;
+			width:7%;
+			justify-content:space-between;
+		}
+		section.welcome{
+			display:flex;
+			
+		}
+		.nav-items{
+			opacity:0.2;
+			display:flex;
+			width:35%;
+			justify-content:space-between;
+		}
+		.text-area,.image-area{
+			width:50%;
+			height:100vh;
+
+		}
+		.image-area{
+			display:flex;
+			align-items:flex-end;
+		}
+		.image-area img{
+			height:90%;
+			width:100%;
+			object-fit: contain;
+			object-position: fixed;
+		}
+
+		.text-area{
+			display: flex;
+           flex-direction: column;
+         justify-content: center;
+           padding:0 5vw;
+           box-sizing: border-box;
+
+		}
+		.pre-title{
+			opacity:0.2;
+			text-transform:uppercase;
+			padding-top:20%;
+		}
+		.title{
+			font-family:var(--title-font);
+			font-size:6vh;
+			text-transform:uppercase;
+		}
+		.price,.purchase{
+			color:white;
+			background-color:black;
+			padding:2%;
+		
+		}
+		.price{
+			width:10%;
+		}
+		.purchase{
+			width:18%;
+		}
+		.description{
+			padding-top:5%;
+			line-height:25px;
+			font-family:var(--description-font);
+			
+		}
+		.descriptions{
+			padding-top:3%;
+		}
+		
+		hr{
+			opacity:0.2;
+			width:30vw;
+			float:left;
+		}
+		.horizantol-line{
+			padding-top:5%;
+		}
+		.feature{
+			display:flex;
+			justify-content:space-between;
+			text-transform:uppercase;
+			padding-bottom:5%;
+		}
+		.features{
+
+		}
+		.ad-item{
+			font-family:var(--description-font);
+			opacity:0.2;
+			line-height:3vh;
+			font-size:10px;
+			text-transform:uppercase;
+		}
+		.vertical-line{
+			border-left:1px solid black;
+			height:20px;
+			opacity:0.2;
+	
+		
+		}
+	</style>
+</head>
+<body>
+<nav>
+	<div class="logo">Logo</div>
+	<div class="nav-items">
+		<div class="nav-item">Home</div>
+		<div class="nav-item">Mens</div>
+		<div class="nav-item">Womens</div>
+		<div class="nav-item">Kids</div>
+	</div>
+	<div class="search">
+	<div>Search</div>
+	<div> <i class="fa fa-search"></i></div>
+</div>
+</nav>
+<section class="welcome">
+	<div class="text-area">
+		<div class="pre-title">Originals</div>
+		<div class="title">continental 80 shoes</div>
+		<div class="price">$80.00</div>
+		<div class="description">
+			<div class="descriptions">Stepped in nostalgia,the Continental 80 captures the retro look of indoor sneakers from the early 1980s.</div>
+			<div class="descriptions">The leather shoes features a swooping two-tone stripe and the distinctive split rubber capsole that is built for a comfortable, flexible feel.</div>
+		</div>
+		<div class="horizantol-line"><hr></div>
+		<div class="feature">
+			<div class="features">size</div>
+			<div class="vertical-line"> </div>
+			<div class="features">qty</div>
+			<div class="purchase">purchase</div>
+		</div>
+		<div class="ads">
+			<div class="ad-item">size guide</div>
+			<div class="ad-item">free shopping and free delivery</div>
+			<div class="ad-item">product details</div>
+		</div>
+	</div>
+
+	<div class="image-area">
+		<img src="./shoes.png"/>
+	</div>
+	</section>
+
+</body>
+</html>
+

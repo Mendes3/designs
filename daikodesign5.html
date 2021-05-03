@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+	
+	<style type="text/css">
+		:root{
+			--body-font: 'Montserrat', sans-serif;
+		}
+		body{
+			margin:0;
+			font-family:var(--body-font);
+		}
+		nav{
+			position:fixed;
+			display:flex;
+			width:87%;
+			height:6vh;
+			justify-content:space-between;
+			padding:3vh 5vw;
+			border-size:border-box;
+		}
+		.nav-items,.icons,.pages,.dots{
+			display:flex;
+			justify-content:space-between;
+		}
+		.nav-items{
+			width:38%;
+		}
+		.icons,.dots{
+			width:25%;
+		}
+		section.welcome{
+			display:flex;
+			height:100vh;
+			width:100vw;
+			position:relative;
+
+		}
+		.text-areas,.image-area,{
+		height:100%;
+		width:50vw;
+		}
+		.text-areas{	
+			padding-top:7%;
+			display:flex;
+			box-sizing:border-box;
+		}
+		.image-area{
+			
+			display:flex;
+			align-items:flex-end;
+		}
+		.image-area img{
+			width:20vw;
+			height:90vh;
+			margin-right:30%;
+		}
+		.icons{
+			width:10%;
+		}
+		.features{			
+			width:30%;
+			height:70%;
+			display:flex;
+			padding-left:5%;
+			flex-direction:column;
+			justify-content:space-between;
+		}
+		.feature{
+			display:flex;
+			height:40%;
+			width:20%;
+			flex-direction:column;
+			justify-content:space-between;
+		}
+		.topic{
+			font-size:60px;
+			text-transform:uppercase;
+			line-height:1;
+			padding-bottom:5%;
+			font-weight:900;
+		}
+		.sub-topic{
+			padding-bottom:5%;
+			font-weight:600;
+		}
+		.description{
+			width:60%;
+		}
+		.dots{
+			justify-content:space-between;
+			width:30%;
+		}
+		.dot{
+			width:10px;
+			height:10px;
+			border-radius:50%;
+			background-color:black;
+			}
+		.pages{
+			padding-top:5%;
+			width:40%;
+			display:flex;
+			justify-content:space-between;
+			box-sizing:border-box;
+		}
+		.vertical-line{
+			position:absolute;
+			right:20%;
+			top:0px;
+			border-left:2px solid black;
+			height:100vh;
+			opacity:0.1;
+		}
+		.team-points{
+			display:flex;
+			padding-top:5%;
+			width:60%;
+			justify-content:space-between;
+		}
+		.schedule{
+		align-items:center;
+			height:20vh;
+			width:20vw;
+			box-sizing:border-box;
+			padding:2vh 5vw;
+			justify-content:space-between;
+		}
+		.background{
+			position:absolute;
+			top:10%;
+			left:15%;
+			font-size:400px;
+			opacity:0.1;
+			z-index:-2;
+		}
+		.bottom-boxes{
+			position:absolute;
+			bottom:0%;
+			left:18%;
+			width:62%;
+			height:15%;
+			display:flex;
+		}
+		.bottom-blue-box{
+			background-color:#624AB7;
+			width:30%;
+			color:white;
+			padding:4%;
+			box-sizing:border-box;
+		}
+		.bottom-black-box{
+			background-color:#2d3436;
+			z-index:-1;
+			width:75%;
+
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div>Logo</div>
+		<div class="nav-items">
+			<div>Scores</div>
+			<div>Power Rankings</div>
+			<div>Standings</div>
+			<div>Schedule</div>
+		</div>
+		<div class="icons">
+			<div><i class="fa fa-search"></i></div>
+			<div><i class="fa fa-user"></i></div>
+			<div><i class="fa fa-users"></i></div>
+		</div>
+		<div> Scoreboard</div>
+	</nav>
+	<section class="welcome">
+		<div class="text-areas">
+				<div class="features">
+					<div class="feature">
+				<div>Goals</div>
+				<div>Assist</div>
+				<div>Teams</div>
+			</div>
+			<div>Subscribe</div>
+		</div>
+			<div class="text-area">
+				<div class="sub-topic">The Fantasy Show</div>
+				<div class="topic">
+					<div>top 10</div>
+					<div>goal</div>
+					<div>scorers</div>
+				</div>
+				<div class="description">
+					Walking you through our latest pre season rankings to give your the top picks for your fantasy season.
+				</div>
+				<div class="pages">
+				<div class="dots">
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+				<div>01/04</div>
+			</div>
+			</div>
+		</div>
+		<div class="image-area">
+			<div><img src="./kobe-bryant.png" /></div>
+			<div class="scoreboard">
+			
+			<div class="schedule">
+				<div> 6:30 pm CT</div>
+				<div class="team-points">
+				<div><b>den</b></div>
+				<div>41</div></div>
+				<div class="team-points">
+				<div>wsm</div>
+				<div>32</div>
+			</div>
+		</div>
+			<div class="schedule">
+				<div>6:30pm CT</div>
+				<div class="team-points">
+				<div>nyg</div>
+				<div>11</div>
+			</div>
+			<div class="team-points">
+				<div><b>nyj</b></div>
+				<div>45</div>
+			</div>
+		</div>
+			<div class="schedule">
+				<div>6:30pm CT</div>
+				<div class="team-points">
+				<div>det</div>
+				<div>21</div>
+			</div>
+			<div class="team-points">
+				<div><b>tb</b></div>
+				<div>45</div>
+			</div>
+
+
+			</div>
+			<div class="schedule">
+				<div><b>All team scores</b></div>
+				<div></div>
+			</div>
+		</div>
+	</section>
+	<div class="vertical-line"></div>
+	<div class="background">10</div>
+	<div class="bottom-boxes">
+		<div class="bottom-blue-box">
+			Watch full video
+		</div>
+		<div class="bottom-black-box">
+		</div>
+	</div>
+
+</body>
+</html>

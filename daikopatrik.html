@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<!-- <meta charset="utf-8" initial-scale='1.0'> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand&display=swap" rel="stylesheet">
+<style type="text/css">
+:root{
+--title-font:'Lobster', cursive;;
+--primary-font:'Quicksand', cursive;
+}
+body{
+margin:0;
+color:white;
+font-family: var(--primary-font);
+}
+nav{
+position: fixed;
+width: 100%;
+height:8vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:0 5vw;
+box-sizing: border-box;
+}
+.nav-items{
+width: 35%;
+display: flex;
+justify-content: space-between;
+}
+main{
+}
+section.welcome{
+height:100vh;
+width: 100%;
+background: linear-gradient(165deg, #ff726c, #eb8f8a);
+display: flex;
+}
+.text-area, .image-area{
+height:100%;
+width: 50%;
+}
+.image-area{
+display: flex;
+align-items: flex-end;
+}
+.image-area img{
+height:95%;
+width: auto;
+}
+.text-area{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding:0 5vw;
+box-sizing: border-box;
+}
+.tabs{
+display: flex;
+justify-content: space-between;
+width: 100%;
+text-transform: uppercase;
+}
+.title{
+font-size:16vh;
+line-height: 16vh;
+font-family: var(--title-font);
+text-shadow:1px 1px 8px rgba(0,0,0,0.2);
+}
+.sub-title{ 
+margin-top:3vh;
+font-size:5vh;
+}
+.description{
+margin-bottom:3vh; 
+}
+.button-area button{
+border:1px solid white;
+color:white;
+background:transparent;
+padding:15px 25px;
+}
+.menu{
+	display: none;
+}
+
+@media (min-width:400px) and (max-width: 768px){
+	section.welcome{
+		flex-direction: column-reverse;
+	}
+	.text-area,.image-area{
+		width:100%;
+		height:50%;
+		text-align: center;
+	}
+	.text-area{
+		align-items: center;
+	}
+	.title{
+		font-size:3.5rem;
+		line-height: 3.5rem;
+	}
+	.sub-title{
+		font-size:1.3rem;
+	}
+	.description{
+		display: none;
+	}
+	.image-area{
+		justify-content: center;
+	}
+
+
+	.nav-item{
+		display: none;
+	}
+	.menu.nav-item{
+		display: block;
+	}
+}
+
+</style>
+<body>
+	
+<nav>
+<div class="logo">Logo</div>
+<div class="nav-items">
+<div class="nav-item">Home</div>
+<div class="nav-item">About</div>
+<div class="nav-item">Contact</div>
+<div class="nav-item">Services</div>
+<div class="nav-item">Products</div>
+</div>
+<div class="menu nav-item">=</div>
+
+</nav>
+<main>
+<section class="welcome">
+<div class="text-area">
+<div class="tabs">
+<div class="tab">games</div>
+<div class="tab">Watch</div>
+<div class="tab">Characters</div>
+</div>
+<div class="title">Patrick</div>
+<div class="title">Starfish</div>
+<div class="sub-title">
+Spongebob's best friend
+</div>
+<div class="description">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempot occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="button-area">
+<button>More About Patrick</button>
+</div>
+</div>
+<div class="image-area">
+<img src="./daikopic.png" />
+</div>
+</section>
+</main>
+</body>
+</html>

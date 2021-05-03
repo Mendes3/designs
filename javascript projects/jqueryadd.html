@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$('#append').click(function(){
+			$('ul').append('<li>Appended item</li>');
+		});
+		$('#prepend').click(function(){
+		$('ul').prepend('<li>Prepended item</li>');
+	});
+		$('#after').click(function(){
+			var txt1='<b>I </b>';
+			var txt2=$('<i></i>').text("love ");
+			var txt3=document.createElement('b');
+			txt3.innerHTML="jquery! ";
+			$('img').after(txt1,txt2,txt3);
+		});
+
+	});
+	
+
+
+	</script>
+
+</head>
+<body>
+	<ul>
+		<li>cat</li>
+		<li>monkey</li>
+	</ul>
+	<button id="prepend">Click me to prepend</button><br>
+	<button id="append">CLick me to append</button><br>
+	<img src="jquery.jpg" width="100px" height="100px"><br>
+	<button id="after">AFTER</button><br>
+	
+
+</body>
+</html>

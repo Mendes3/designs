@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand&display=swap" rel="stylesheet">
+<style type="text/css">
+	:root{
+		--title-font:'Lobster', cursive;
+		--body-font:'Gayathri', sans-serif;
+	}
+	body{
+		margin:0;
+		color:white;
+		font-family:var(--body-font);
+	}
+	section.Welcome{
+		height:100vh;
+		width: 100%;
+		display:flex;
+		background:linear-gradient(165deg, #ff726c, #eb8f8a);
+
+		
+	}
+	nav{
+		position:fixed;
+		display:flex;
+		width:100%;
+		height:8vh;
+		align-items:center;
+		box-sizing: border-box;
+		justify-content:space-between;
+        padding:0 5vw;
+        box-sizing:border-box;
+	}
+	.nav-items{
+		justify-content:space-between;
+		width:35%;
+		display:flex;
+	}
+	.text-area,.image-area{
+		height:100%;
+		width:50%;
+	}
+	.text-area{
+		display:flex;
+		padding:2vw 5vw;
+		justify-content:center;
+		flex-direction:column;
+
+	}
+	.image-area{
+		display:flex;
+		align-items:flex-end;
+
+	}
+	img{
+		width:auto;
+		height:90%;
+	}
+	.tabs{
+		display:flex;
+		justify-content:space-between;
+		text-transform:uppercase;
+
+	}
+	.title{
+		font-size:16vh;
+		font-family:var(--title-font);
+		line-height:14vh;
+		text-shadow:1px 1px 8px rgba(0,0,0,0.2);
+	}
+	.subtitle{
+		font-size:5vh;
+		margin-top:3vh;
+	}
+	.description{
+		margin-bottom:5vh;
+	}
+	.button-area button{
+		color:white;
+		border:1px solid white;
+		background:transparent;
+		padding:15px 25px;
+	}
+
+	</style>
+<body>
+	<nav>
+		<div class="logo">Logo</div>
+		<div class="nav-items">
+		<div class="nav-item">Home</div>
+		<div class="nav-item">About</div>
+		<div class="nav-item">Services</div>
+		<div class="nav-item">Product</div>
+	</div>
+	</nav>
+	<main>
+		<section class="Welcome">
+			<div class="text-area">
+				<div class="tabs">
+					<div class="tab">games</div>
+					<div class="tab">watch</div>
+					<div class="tab">characters</div>
+				</div>
+					<div class="title">Patrick</div>
+					<div class="title">Starfish</div>
+					<div class="subtitle">Spongebob's best friend</div>
+					<div class="description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="button-area">
+						<button> More about Patrick</button>
+					</div>
+			</div>
+			<div class="image-area">
+				<img src="./daikopic.png" />
+			</div>
+		</section>
+	</main>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<style>
+		body{
+			margin:0px;
+			color:white;
+		}
+		section.welcome{
+			display:flex;
+			width:100%;
+			height:100vh;
+		}
+		nav{
+		    position: fixed;
+		    background-color:#34495e;          
+            height:7vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 37vw;
+            box-sizing: border-box;
+
+		}
+		.nav-items{
+			display:flex;
+			justify-content:space-between;
+			width:45vw;
+		}
+		.left-area{
+			height:100%;
+			width:30%;
+			z-index:4;
+		}
+		.left-area img{
+			height:100%;
+			width:100%;
+			z-index:5;
+		}
+		.right-area{
+			display:flex;
+			flex-direction: column;
+			width:70%;
+			height:100%;
+			background-color:#2c3e50;
+		}
+		.text-area{
+			display:flex;
+			padding-top:10%;
+			width:90%;
+			justify-content:space-between;
+		}
+		.topic{
+			font-size:60px;
+			width:50%;
+			padding-left:10%;
+			box-sizing:border-box;
+		}
+		.description{
+			font-size:18px;
+			width:42%;
+
+		}
+		button{
+			padding:3%;
+			border-radius:30px;
+			margin-top:5%;
+			background-color:#9b59b6;
+			border:none;
+
+		}
+		.ads-images{
+			display:flex;
+			width:90%;
+			padding-top:7%;
+			padding-left:10%;
+
+		}
+		.ads-images img{
+			width:70%;
+			height:100%;
+			border-radius:10px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="nav-items">
+			<div>Home</div>
+			<div>Photos</div>
+			<div>Packages</div>
+			<div>Contacts</div>
+		</div>
+	</nav>
+	<section class="welcome">
+		<div class="left-area">
+			<img src="./waterscene.jpg"/>
+		</div>
+		<div class="right-area">
+			<div class="text-area">
+				<div class="topic">Let's make world tour</div>
+				<div class="description">
+			<div>
+				We intend to take you to the world's most famous and beautiful places. You also see how much wonders God has made for us.</div>
+				<div><button>GET STARTED</button></div>
+
+			</div>
+		</div>
+			<div class="image-area">
+			
+				<div class="ads-images">
+					<div><img src="./scene.jpg"/></div>
+					<div><img src="./scene1.jpg"/></div>
+					<div><img src="./scene2.jpeg"/></div>
+					
+			
+			</div>
+		</div>
+			
+		</div>
+
+	</section>
+
+</body>
+</html>
